@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--bg2);
+}
+
+.footer-txt p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.footer-iconTop a {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: var(--bg);
+  border: 1px solid var(--dark-red);
+  border-radius: 50%;
+  color: var(--dark-red);
+  font-size: 1.6rem;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  transition: background 0.2s ease-in-out;
+}
+.footer-iconTop a:hover {
+  background: var(--dark-red);
+  box-shadow: 0 0 1rem var(--dark-red);
+  color: var(--light-red);
+}
+
+.footer-iconTop .btn-home.btnDisplay {
+  display: inline-flex;
+}

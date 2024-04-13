@@ -1,0 +1,71 @@
+.reviews {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reviews h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.avis-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.avis-box {
+  padding: 20px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  border-bottom: 0.5rem solid var(--dark-red);
+  transition: transform 0.2s ease-in-out;
+}
+
+.avis-box:hover {
+  transform: translateY(-5px);
+}
+
+.avis-box .bxs-quote-alt-left {
+  color: var(--dark-red);
+  font-size: 1.6rem;
+}
+
+.avis-box .stars {
+  font-size: 1rem;
+  color: orange;
+}
+
+.avis-box p {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.avis-box .avis-profil {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  column-gap: 0.5rem;
+}
+
+.avis-box .avis-profil img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.avis-box .avis-profil h6 {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 852px) {
+  .avis-content {
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
+}

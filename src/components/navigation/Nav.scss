@@ -20,8 +20,8 @@ nav {
 }
 
 .profil img {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
@@ -47,4 +47,97 @@ nav {
 .logo .bx {
   color: var(--dark-red);
   font-size: 2rem;
+}
+
+.navigation {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.navigation a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text);
+  padding: 0.5rem 1rem;
+}
+
+.navigation a:hover,
+.navigation a.link-active {
+  color: var(--bg);
+  background: var(--dark-red);
+  border-radius: 50px;
+  transition: 0.2s ease-in-out;
+}
+
+#burger-menu {
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  nav {
+    padding: 18px 60px;
+  }
+
+  .home-txt {
+    padding: 0 100px;
+  }
+
+  .slider-container img {
+    width: 400px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  nav {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  nav {
+    padding: 12px 4%;
+  }
+
+  #burger-menu {
+    display: block;
+  }
+
+  .slider-container img {
+    width: 300px;
+  }
+
+  .navigation {
+    position: absolute;
+    top: -600px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .navigation a {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .navigation.active {
+    top: 100%;
+  }
 }
