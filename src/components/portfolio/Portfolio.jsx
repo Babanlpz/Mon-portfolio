@@ -32,7 +32,7 @@ function Portfolio() {
       image: "./airbnb.png",
       description:
         "Explorez notre clone Airbnb : une application web réactive créée avec React.js et Tailwind CSS. Plongez dans une expérience immersive pour trouver facilement votre prochain logement.",
-      link: "https://babanlpz.github.io/Landing-page-coffee/",
+      link: "https://cloneairbnb-xi.vercel.app/",
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ function Portfolio() {
       image: "./printit.png",
       description:
         "Découvrez notre petite imprimerie : une application simple réalisée en JavaScript. Créez des designs personnalisés, imprimez des documents et explorez une gamme de services d'impression. Une expérience intuitive pour répondre à vos besoins d'impression.",
-      link: "https://babanlpz.github.io/Landing-page-coffee/",
+      link: "https://babanlpz.github.io/Lopez_Esteban_5_code_22112023/",
     },
     {
       id: 4,
@@ -48,7 +48,7 @@ function Portfolio() {
       image: "./kasa.png",
       description:
         "Découvrez notre site de location de logements conçu avec ReactJS et stylisé avec Sass. Parcourez notre sélection, consultez les descriptions détaillées et réservez facilement votre prochain séjour. Une expérience intuitive pour trouver votre hébergement idéal.",
-      link: "https://babanlpz.github.io/Landing-page-coffee/",
+      link: "https://babanlpz.vercel.app/",
     },
     // Ajoutez d'autres projets ici
   ];
