@@ -7,6 +7,9 @@ function Footer() {
         <div className="footer-txt">
           <p>Copyright &copy; 2024 by Baban Dev | Tous droits réservés</p>
         </div>
+        <div className="footer-logo">
+          <img src="/logo.png" alt="Logo" />
+        </div>
 
         <div className="footer-iconTop">
           <a href="#home" className="btn-home">

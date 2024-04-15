@@ -16,7 +16,7 @@ function Services() {
               Développe des sites vitrines, e-commerce, applications web, mobile
               ou de bureau.
             </p>
-            <a href="#" className="btn">
+            <a href="#contact" className="btn">
               Me contacter
             </a>
           </div>
@@ -27,7 +27,7 @@ function Services() {
               Offrez à vos clients une expérience fluide, intuitive et
               visuellement magnifique.
             </p>
-            <a href="#" className="btn">
+            <a href="#contact" className="btn">
               Me contacter
             </a>
           </div>
@@ -38,7 +38,11 @@ function Services() {
               Nous avons tous le droit d'explorer le web. HTML sémantique et
               ARIA si pertinent.
             </p>
-            <a href="#" className="btn">
+            <a
+              href="https://www.lemonde.fr/idees/article/2023/06/02/internet-l-accessibilite-numerique-est-encore-trop-souvent-vecue-comme-une-contrainte_6175856_3232.html"
+              target="_blank"
+              className="btn"
+            >
               En savoir plus
             </a>
           </div>

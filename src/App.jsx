@@ -6,6 +6,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 import Nav from "./components/navigation/Nav";
+import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Services />
       <Categories />
+      <Portfolio />
       {/* <Produits /> */}
       <Reviews />
       <Contact />

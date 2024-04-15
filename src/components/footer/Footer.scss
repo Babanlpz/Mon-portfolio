@@ -7,6 +7,10 @@
   background: var(--bg2);
 }
 
+.footer-logo img {
+  width: 70px; /* ajustez la taille du logo selon vos besoins */
+  margin-left: 20px; /* ajustez la marge entre le texte et le logo selon vos besoins */
+}
 .footer-txt p {
   text-align: center;
   font-size: 1rem;

@@ -4,7 +4,9 @@ function Reviews() {
   return (
     <>
       <section className="reviews" id="reviews">
-        <h2>Ils ont étaient satisfait</h2>
+        <h2 className="section-title">
+          Ils ont étaient satisfait <span>avis clients</span>
+        </h2>
         <div className="categorie-line"></div>
         <div className="avis-content">
           <div className="avis-box">

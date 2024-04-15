@@ -2,9 +2,28 @@ import "./Home.scss";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
+import { useEffect, useRef } from "react";
 import { Navigation } from "swiper/modules";
+import Typed from "typed.js";
 
 function Home() {
+  const typedRef = useRef(null);
+
+  useEffect(() => {
+    // Créer une nouvelle instance de Typed lorsque le composant est monté
+    const typed = new Typed(typedRef.current, {
+      strings: ["FrontEnd", "Fullstack"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
+
+    // Nettoyer lorsque le composant est démonté
+    return () => {
+      typed.destroy();
+    };
+  }, []);
   return (
     <>
       <Swiper
@@ -22,13 +41,29 @@ function Home() {
                   <h1>
                     Intégrateur web
                     <br />
-                    Fullstack !
+                    <span className="multiple" ref={typedRef}></span>
                   </h1>
                   <a href="#" className="btn">
-                    Voir burger<i className="bx bx-right-arrow-alt"></i>
+                    Voir mon CV <i className="bx bx-right-arrow-alt"></i>
                   </a>
                 </div>
-                <img src="./Burger-01.png" alt="" />
+                <img src="./apple.png" alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="swiper-slide slider-container">
+                <div className="home-txt">
+                  <span>Pour vous</span>
+                  <h1>
+                    Construisons votre présence
+                    <br />
+                    en ligne, ensemble.
+                  </h1>
+                  <a href="#services" className="btn">
+                    Mes services <i className="bx bx-right-arrow-alt"></i>
+                  </a>
+                </div>
+                <img src="" alt="" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -36,31 +71,15 @@ function Home() {
                 <div className="home-txt">
                   <span>Vous avez le choix</span>
                   <h1>
-                    Notre univers
+                    Des solutions web sur mesure pour vos
                     <br />
-                    Burger vous attend !
+                    besoins uniques.
                   </h1>
-                  <a href="#" className="btn">
-                    Voir burger<i className="bx bx-right-arrow-alt"></i>
+                  <a href="#contact" className="btn">
+                    Me contacter<i className="bx bx-right-arrow-alt"></i>
                   </a>
                 </div>
-                <img src="./Burger-02.png" alt="" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="swiper-slide slider-container">
-                <div className="home-txt">
-                  <span>Vous avez le choix</span>
-                  <h1>
-                    Votre bonheur
-                    <br />
-                    Burger est ici !
-                  </h1>
-                  <a href="#" className="btn">
-                    Voir burger<i className="bx bx-right-arrow-alt"></i>
-                  </a>
-                </div>
-                <img src="./Burger-03.png" alt="" />
+                <img src="" alt="" />
               </div>
             </SwiperSlide>
           </div>
