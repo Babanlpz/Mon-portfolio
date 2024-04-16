@@ -168,7 +168,7 @@
 }
 
 // Media queries
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .portfolio-box {
     border-radius: 1rem;
   }
@@ -195,7 +195,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .portfolio-layer h4 {
     font-size: 1.2rem;
   }
@@ -211,5 +211,24 @@
 
   .portfolio-layer a i {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .portfolio-layer h4 {
+    font-size: 1rem;
+  }
+
+  .portfolio-layer p {
+    font-size: 0.5rem;
+  }
+
+  .portfolio-layer a {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .portfolio-layer a i {
+    font-size: 0.8rem;
   }
 }

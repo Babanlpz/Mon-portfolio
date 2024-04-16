@@ -36,6 +36,10 @@ textarea {
   border-radius: 5px;
 }
 
+textarea {
+  resize: vertical;
+}
+
 .contact-message {
   height: 100px;
 }
@@ -47,6 +51,62 @@ textarea {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeInOut 4s;
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup.error {
+  background-color: #f44336; /* Couleur rouge */
+  color: white;
+}
+
+.popup.success {
+  background-color: #4caf50; /* Couleur verte */
+  color: white;
+}
+
+/* Flèche */
+.popup::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 30px; /* Positionne la flèche au centre */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent transparent; /* Flèche blanche */
+}
+
+.popup.error::before {
+  border-bottom-color: #f44336; /* Couleur rouge */
+}
+
+.popup.success::before {
+  border-bottom-color: #4caf50; /* Couleur verte */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 530px) {
