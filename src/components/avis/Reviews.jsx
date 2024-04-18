@@ -25,7 +25,7 @@ function Reviews() {
               laboriosam cupiditate inventore repellendus.
             </p>
             <div className="avis-profil">
-              <img src="./avatar-1.svg" alt="" />
+              <img src="./avatar-1.svg" alt="Photo de profil client" />
               <h6>Justine Zoé</h6>
             </div>
           </div>
@@ -45,7 +45,7 @@ function Reviews() {
               laboriosam cupiditate inventore repellendus.
             </p>
             <div className="avis-profil">
-              <img src="./avatar-2.svg" alt="" />
+              <img src="./avatar-2.svg" alt="Photo de profil client" />
               <h6>Lea Pourrel</h6>
             </div>
           </div>
@@ -65,7 +65,7 @@ function Reviews() {
               laboriosam cupiditate inventore repellendus.
             </p>
             <div className="avis-profil">
-              <img src="./avatar-3.svg" alt="" />
+              <img src="./avatar-3.svg" alt="Photo de profil client" />
               <h6>Margerite Plata</h6>
             </div>
           </div>

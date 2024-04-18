@@ -43,7 +43,12 @@ function Home() {
                     <br />
                     <span className="multiple" ref={typedRef}></span>
                   </h1>
-                  <a href="#" className="btn">
+                  <a
+                    href="./CVESTEBAN.pdf"
+                    target="_blank"
+                    className="btn"
+                    rel="noopener noreferrer"
+                  >
                     Voir mon CV <i className="bx bx-right-arrow-alt"></i>
                   </a>
                 </div>

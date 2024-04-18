@@ -71,7 +71,7 @@ export default function Nav() {
         <a href="#" target="blank">
           <img src="/youtube.png" alt="Logo Youtube" />
         </a>
-        <a href="#" target="blank">
+        <a href="https://www.linkedin.com/in/estebanlopezdev/" target="blank">
           <img src="./linkedin.png" alt="Logo dribble" />
         </a>
       </div>

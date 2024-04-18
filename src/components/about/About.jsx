@@ -22,8 +22,13 @@ function About() {
             vision en réalité. Contactez-moi pour discuter de votre projet web
             et ensemble, donnons vie à votre présence en ligne.
           </p>
-          <p>Construisons votre présence en ligne, ensemble.</p>
-          <a href="#" className="btn-about">
+          <p>🚀 Construisons votre présence en ligne, ensemble. 💻🌐</p>
+          <a
+            href="./CVESTEBAN.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-about"
+          >
             Voir mon CV
             <i className="bx bx-right-arrow-alt"></i>
           </a>

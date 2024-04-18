@@ -70,7 +70,7 @@ function Portfolio() {
               key={project.id}
               onClick={() => handleOpenModal(project)}
             >
-              <img src={project.image} alt="" />
+              <img src={project.image} alt="Image du projet" />
               <div className="portfolio-layer">
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>
@@ -87,7 +87,11 @@ function Portfolio() {
           <div className="modal">
             <div className="modal-content">
               {/* Contenu de la modal */}
-              <img className="modal-image" src={selectedProject.image} alt="" />
+              <img
+                className="modal-image"
+                src={selectedProject.image}
+                alt="Image du projet"
+              />
               <h2 className="modal-title">{selectedProject.title}</h2>
               <p className="modal-description">{selectedProject.description}</p>
               <a
