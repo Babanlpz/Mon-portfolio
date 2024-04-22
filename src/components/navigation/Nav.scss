@@ -141,3 +141,41 @@ nav {
     top: 100%;
   }
 }
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.theme-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.sun-icon,
+.moon-icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.sun-icon {
+  color: #f9ca24; /* Jaune vif pour le soleil */
+}
+
+.moon-icon {
+  color: #636e72; /* Gris foncé pour la lune */
+}
+
+.theme-button:hover .sun-icon {
+  transform: rotate(180deg);
+}
+
+.theme-button:hover .moon-icon {
+  transform: rotate(180deg);
+}

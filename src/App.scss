@@ -24,7 +24,18 @@
   --dark-gray: #333;
 }
 
-body {
+.dark-mode {
+  --light-orange: rgb(255, 165, 0); /* Orange clair */
+  --dark-orange: rgb(255, 87, 34); /* Orange foncé */
+  --light-red: rgb(255, 99, 71); /* Rouge clair */
+  --dark-red: rgb(178, 34, 34); /* Rouge foncé */
+  --bg: #222; /* Fond sombre */
+  --text: #eee; /* Texte clair */
+  --light-gray: #444; /* Gris clair */
+  --dark-gray: #ddd; /* Gris foncé */
+}
+
+body.dark-mode {
   color: var(--text);
   background: var(--bg);
 }

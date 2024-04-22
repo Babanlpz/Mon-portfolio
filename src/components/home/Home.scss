@@ -8,6 +8,10 @@
   background: no-repeat center/cover url("../img-bg.jpg");
 }
 
+.dark-mode .slider-container {
+  background: no-repeat center/cover url("../img-bg2.jpeg");
+}
+
 .slider-container img {
   width: 430px;
   position: absolute;

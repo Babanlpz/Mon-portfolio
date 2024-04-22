@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import { BiMoon, BiSun } from "react-icons/bi";
 import "./Nav.scss";
 
-export default function Nav() {
+export default function Nav({ toggleTheme }) {
+  // Correction ici
   const [isActive, setIsActive] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const navigation = document.querySelector(".navigation");
@@ -31,12 +34,27 @@ export default function Nav() {
     };
   }, [isActive]);
 
+  const handleThemeToggle = () => {
+    setIsDarkMode(!isDarkMode); // Inverse le mode entre clair et sombre
+    toggleTheme(); // Appelle la fonction pour basculer le thème
+  };
+
   return (
     <nav>
       <a href="#" className="logo">
         <i className="bx bx-baguette"></i>
         <span>BABAN.</span>
       </a>
+
+      <div className="theme-toggle">
+        <button onClick={handleThemeToggle} className="theme-button">
+          {isDarkMode ? (
+            <BiMoon className="moon-icon" />
+          ) : (
+            <BiSun className="sun-icon" />
+          )}
+        </button>
+      </div>
 
       <i id="burger-menu" className={`bx ${isActive ? "bx-x" : "bx-menu"}`}></i>
       <ul className={`navigation ${isActive ? "active" : ""}`}>

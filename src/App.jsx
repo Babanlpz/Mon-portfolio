@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.scss";
 import About from "./components/about/About";
 import Reviews from "./components/avis/Reviews";
@@ -10,10 +11,22 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+  const [showBackground, setShowBackground] = useState(true);
+
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle("dark-mode");
+  };
+
+  const toggleBackground = () => {
+    setShowBackground(!showBackground);
+  };
+
   return (
     <>
-      <Nav />
-      <Home />
+      <Nav toggleTheme={toggleTheme} />
+      <Home toggleBackground={toggleBackground} />
       <About />
       <Services />
       <Categories />
