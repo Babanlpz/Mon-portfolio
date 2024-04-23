@@ -156,11 +156,12 @@ nav {
   align-items: center;
   justify-content: center;
   outline: none;
+  gap: 0.5rem;
 }
 
 .sun-icon,
 .moon-icon {
-  font-size: 2rem;
+  font-size: 1.6rem;
   transition: transform 0.3s ease;
 }
 
@@ -169,13 +170,13 @@ nav {
 }
 
 .moon-icon {
-  color: #636e72; /* Gris foncé pour la lune */
+  color: white; /* Gris foncé pour la lune */
 }
 
 .theme-button:hover .sun-icon {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 
 .theme-button:hover .moon-icon {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }

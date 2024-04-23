@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import { BiMoon, BiSun } from "react-icons/bi";
 import "./Nav.scss";
-
+/* eslint-disable react/prop-types */
 export default function Nav({ toggleTheme }) {
   // Correction ici
   const [isActive, setIsActive] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    const navigation = document.querySelector(".navigation");
+    // const navigation = document.querySelector(".navigation");
     const burger = document.querySelector("#burger-menu");
 
     const toggleNavigation = () => {
@@ -46,16 +46,6 @@ export default function Nav({ toggleTheme }) {
         <span>BABAN.</span>
       </a>
 
-      <div className="theme-toggle">
-        <button onClick={handleThemeToggle} className="theme-button">
-          {isDarkMode ? (
-            <BiMoon className="moon-icon" />
-          ) : (
-            <BiSun className="sun-icon" />
-          )}
-        </button>
-      </div>
-
       <i id="burger-menu" className={`bx ${isActive ? "bx-x" : "bx-menu"}`}></i>
       <ul className={`navigation ${isActive ? "active" : ""}`}>
         <li>
@@ -76,7 +66,17 @@ export default function Nav({ toggleTheme }) {
           <a href="#reviews">Les avis</a>
         </li>
       </ul>
+
       <div className="profil">
+        <div className="theme-toggle">
+          <button onClick={handleThemeToggle} className="theme-button">
+            {isDarkMode ? (
+              <BiMoon className="moon-icon" />
+            ) : (
+              <BiSun className="sun-icon" />
+            )}
+          </button>
+        </div>
         <a href="https://github.com/Babanlpz" target="blank">
           <img src="/github.png" target="blank" alt="Logo Github" />
         </a>
