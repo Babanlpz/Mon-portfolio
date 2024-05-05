@@ -1,0 +1,8 @@
+{
+  "contact": {
+    "title": "Démarrons un projet ensemble, n’hésitez pas à me contacter",
+    "button": "Envoyer",
+    "successMessage": "Message envoyé avec succès!",
+    "errorMessage": "Erreur lors de l'envoi du message."
+  }
+}

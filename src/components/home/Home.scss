@@ -13,7 +13,7 @@
 }
 
 .slider-container img {
-  width: 430px;
+  width: 450px;
   position: absolute;
   right: 150px;
   bottom: 100px;
@@ -50,7 +50,20 @@
 }
 
 .btn:hover {
-  background: var(--light-red);
+  color: var(--bg);
+  background: var(--medium-red);
+}
+
+.dark-mode .swiper-button-next {
+  background: no-repeat center/cover url("../arrowleft.png");
+  margin-right: 20px;
+  background-size: 100% auto;
+}
+
+.dark-mode .swiper-button-prev {
+  background: no-repeat center/cover url("../arrowright.png");
+  margin-right: 20px;
+  background-size: 100% auto;
 }
 
 .swiper-button-next {

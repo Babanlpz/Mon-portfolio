@@ -44,14 +44,19 @@ function Contact() {
         <form action="#" ref={form} onSubmit={sendEmail}>
           <div className="input-box">
             <input type="text" required placeholder="Nom" name="nom" />
-            <input type="email" required placeholder="Email" name="email" />
+            <input
+              type="email"
+              required
+              placeholder="test@gmail.com"
+              name="email"
+            />
           </div>
           <div className="input-box">
             <textarea
               className="contact-message"
               cols="30"
               rows="10"
-              placeholder="Message"
+              placeholder="Entrer un message ici..."
               name="message"
             ></textarea>
             <input type="submit" value="Envoyer" className="contact-btn" />
@@ -69,7 +74,7 @@ function Contact() {
       {/* Affichage du message d'erreur */}
       {error && (
         <div className="popup error">
-          <i className="bx bx-error-circle"></i> Erreur lors de l'envoi du
+          <i className="bx bx-error-circle "></i> Erreur lors de l'envoi du
           message.
         </div>
       )}

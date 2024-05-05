@@ -52,7 +52,7 @@ function Home() {
                     Voir mon CV <i className="bx bx-right-arrow-alt"></i>
                   </a>
                 </div>
-                <img src="./apple.png" alt="" />
+                <img src="./ordinateur2.svg" alt="" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -68,7 +68,7 @@ function Home() {
                     Mes services <i className="bx bx-right-arrow-alt"></i>
                   </a>
                 </div>
-                <img src="" alt="" />
+                <img src="./ordinateur.svg" alt="" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -84,7 +84,7 @@ function Home() {
                     Me contacter<i className="bx bx-right-arrow-alt"></i>
                   </a>
                 </div>
-                <img src="" alt="" />
+                <img src="./ordinateur3.svg" alt="" />
               </div>
             </SwiperSlide>
           </div>
