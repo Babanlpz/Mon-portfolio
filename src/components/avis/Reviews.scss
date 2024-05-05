@@ -26,6 +26,15 @@
   transition: transform 0.2s ease-in-out;
 }
 
+.dark-mode .avis-box {
+  border-bottom: 0.5rem solid var(--medium-red);
+  transition: 0.2s ease-in-out;
+}
+
+.dark-mode .avis-box:hover {
+  box-shadow: 0 5px 5px 0 rgb(222, 213, 213);
+}
+
 .avis-box:hover {
   transform: translateY(-5px);
 }
